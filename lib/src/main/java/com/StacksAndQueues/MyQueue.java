@@ -8,6 +8,9 @@ public class MyQueue<K extends Comparable<K>> {
 	public void enqueu(INode<K> element) {
 		myLinkedList.append(element);
 	}
+	public INode<K> dequeue() {
+		return myLinkedList.pop();
+	}
 	public INode<K> peak() {
 		return myLinkedList.head;
 	}
